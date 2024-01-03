@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: balance
+  description: Provides real-time balance information
+  title: Balance
+  annotations:
+    github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - balance
+    - real-time-data
+    - financial-data
+    - account-information
+spec:
+  type: service
+  lifecycle: production
+  owner: payments
+  system: balance
